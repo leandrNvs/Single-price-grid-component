@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light-Gray);
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.join {
+  color: var(--Grayish-Blue);
+  padding: 0.8rem 1.5rem;
+  font-size: 16px;
+}
+
+.join .title {
+  color: var(--Cyan);
+  font-size: 18px;
+}
+
+.join > span {
+  color: var(--Bright-Yellow);
+}
+
+.join .text {
+  line-height: 1.5;
+}
+
+.join > * {
+  margin: 1rem 0;
+}
+
+.subscription {
+  background-color: var(--Cyan);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+}
+
+.subscription .title {
+  font-size: 1.1rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price span:first-child {
+  font-size: 2rem;
+}
+
+.price span:last-child {
+  color: var(--Light-Gray);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.subscription .text {
+  margin-top: -0.5rem;
+}
+
+.subscription button {
+  width: 100%;
+  background-color: var(--Bright-Yellow);
+  color: #fff;
+  border: 0;
+  font-size: 0.9rem;
+  padding: 0.8rem 0;
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+
+.subscription > * {
+  margin: 1rem 0;
+}
+
+.why {
+  background-color: var(--Cyan);
+  opacity: 0.8;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+}
+
+.why .title {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.why li {
+  font-weight: 100;
+  font-size: 0.893rem;
+  padding: 0.1rem 0;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .join {
+    flex-basis: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .why,
+  .subscription {
+    flex: 1;
+  }
+}
